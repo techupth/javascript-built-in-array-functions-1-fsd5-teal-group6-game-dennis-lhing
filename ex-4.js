@@ -7,11 +7,12 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
-  // Start coding here
+  let sum = (todos) => todos.completed && true && todos;
+  return todos.filter(sum);
 }
 
-getCompletedTodo(todos);
-
+const result = getCompletedTodo(todos);
+console.log(result);
 /* 
 	Output:
 	[

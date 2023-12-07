@@ -5,13 +5,14 @@ const todos = [
   { topic: "Relax", completed: false },
   { topic: "Clean the room", completed: true },
 ];
-
+//console.log(todos[0].topic);
 function getTodoTopics(todos) {
-  // Start coding here
+  let sum = (todos) => todos.topic;
+  return todos.map(sum);
 }
 
-getTodoTopics(todos);
-
+const result = getTodoTopics(todos);
+console.log(result);
 /* 
 	Output:
 	[
