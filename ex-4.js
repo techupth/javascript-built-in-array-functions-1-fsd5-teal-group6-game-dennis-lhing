@@ -5,13 +5,18 @@ const todos = [
   { topic: "Relax", completed: false },
   { topic: "Clean the room", completed: true },
 ];
-
 function getCompletedTodo(todos) {
   // Start coding here
+  //function pickcompleted(choose) {
+  //  if (choose.completed === true) return choose;
+  // }
+  return todos.filter((choose) => {
+    if (choose.completed === true) return choose;
+  });
 }
 
 getCompletedTodo(todos);
-
+console.log(getCompletedTodo(todos));
 /* 
 	Output:
 	[
